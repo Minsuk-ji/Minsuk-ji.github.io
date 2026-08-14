@@ -365,12 +365,14 @@ h2 {
   transform: translateY(-2px);
 }
 
-.proj-card > a {
+.proj-card > a,
+.proj-card > .proj-img-wrap {
   display: block;
   background: #f7f9fb;
 }
 
-.proj-card > a img {
+.proj-card > a img,
+.proj-card > .proj-img-wrap img {
   width: 100%;
   height: 160px;
   object-fit: contain;
