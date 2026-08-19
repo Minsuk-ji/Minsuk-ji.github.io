@@ -381,6 +381,11 @@ h2 {
   box-sizing: border-box;
 }
 
+.proj-card > a img.proj-cover {
+  object-fit: cover;
+  padding: 0;
+}
+
 .proj-body {
   padding: 14px 16px 16px;
 }
