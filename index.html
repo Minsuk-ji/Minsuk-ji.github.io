@@ -186,6 +186,15 @@
       <h2>Projects</h2>
       <div class="proj-grid">
         <div class="proj-card">
+          <div class="proj-video-wrap">
+            <video src="videos/proj-so101-smolvla-tape.mp4" controls muted loop playsinline preload="metadata"></video>
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">SO-101 Pick-and-Place with SmolVLA</div>
+            <p>A real SO-101 arm running a SmolVLA policy to pick up a black circular tape and place it into a black box. The first policy, trained on 30 demonstrations, was deployed but moved jerkily and often failed. Reviewing the collected episodes showed several with the hand blocking the camera view or ending in failed grasps; after filtering these out and retraining on the remaining 25 clean demonstrations, the policy performed the task reliably (video above). Compared with an ACT policy trained on the same data, SmolVLA produced noticeably finer, more precise motion, and — thanks to its larger VLM backbone — followed complex instructions more accurately.</p>
+          </div>
+        </div>
+        <div class="proj-card">
           <a href="https://github.com/Minsuk-ji/SO-101-Manipulation-Learning-From-PPO-to-Vision-Policies" target="_blank">
             <img class="proj-cover" src="images/proj-so101-isaaclab.png" alt="Parallel SO-101 manipulation environments running in NVIDIA Isaac Lab">
           </a>
