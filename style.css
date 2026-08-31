@@ -74,6 +74,40 @@ body {
   color: var(--accent);
 }
 
+.lang-switch {
+  display: flex;
+  flex: 0 0 auto;
+  border: 1px solid #d5d9de;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.lang-switch button {
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border: none;
+  background: transparent;
+  color: #777;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.lang-switch button + button {
+  border-left: 1px solid #d5d9de;
+}
+
+.lang-switch button[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff;
+}
+
+.lang-switch button:hover[aria-pressed="false"] {
+  color: var(--accent);
+  background: #f5f9fd;
+}
+
 img {
   max-width: 100%;
 }

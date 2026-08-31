@@ -24,11 +24,15 @@
     <div class="topnav-inner">
       <a class="nav-name" href="#">Minsuk Ji</a>
       <div class="nav-links">
-        <a href="#news">News</a>
-        <a href="#publications">Publications</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
+        <a href="#news" data-i18n="nav-news">News</a>
+        <a href="#publications" data-i18n="nav-pubs">Publications</a>
+        <a href="#education" data-i18n="nav-edu">Education</a>
+        <a href="#experience" data-i18n="nav-exp">Experience</a>
+        <a href="#projects" data-i18n="nav-proj">Projects</a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang-btn="ko" aria-pressed="false">KO</button>
       </div>
     </div>
   </nav>
@@ -38,21 +42,21 @@
     <section class="intro">
       <div class="intro-text">
         <h1>Minsuk Ji</h1>
-        <p>
+        <p data-i18n="intro-p1">
           I am a M.S. student in Artificial Intelligence at <a href="https://www.inha.ac.kr/" target="_blank">Inha University</a>,
           affiliated with the <a href="https://gcl-inha.github.io/" target="_blank">Generative Computing Lab</a>,
           advised by <a href="https://nmhkahn.github.io/" target="_blank">Prof. Namhyuk Ahn</a>.
           I received my B.S. in Electronic Engineering from Inha University in Feb 2025.
         </p>
-        <p>
+        <p data-i18n="intro-p2">
           Previously, I worked as a Computer Vision Developer intern at <strong>Light Vision</strong> (Jun 2024 – Dec 2024).
         </p>
-        <p>
+        <p data-i18n="intro-p3">
           My research interests include <strong>diffusion models</strong>, <strong>world models</strong>, <strong>vision-language-action (VLA)</strong>, and <strong>physical AI</strong>.
         </p>
         <p class="links">
-          <a href="mailto:wlalstjr471@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-          <a href="mailto:wlalstjr471@inha.edu"><i class="fas fa-envelope"></i> Email (Inha)</a>
+          <a href="mailto:wlalstjr471@gmail.com"><i class="fas fa-envelope"></i> <span data-i18n="link-email">Email</span></a>
+          <a href="mailto:wlalstjr471@inha.edu"><i class="fas fa-envelope"></i> <span data-i18n="link-email-inha">Email (Inha)</span></a>
           <a href="https://scholar.google.com/citations?user=Fzen5FYAAAAJ&hl=ko" target="_blank"><i class="ai ai-google-scholar"></i> Scholar</a>
           <a href="https://github.com/Minsuk-ji" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           <a href="https://www.linkedin.com/in/minsuk-ji-541282316/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -65,16 +69,16 @@
 
     <!-- ===================== News ===================== -->
     <section id="news">
-      <h2>News</h2>
+      <h2 data-i18n="h-news">News</h2>
       <ul class="news">
-        <li><span class="date">Jan 2026</span><span>Our paper on compositional image synthesis is accepted to ICASSP 2026 🎉</span></li>
-        <li><span class="date">Feb 2025</span><span>I started my M.S. in Artificial Intelligence at Inha University, joining the Generative Computing Lab.</span></li>
+        <li><span class="date">Jan 2026</span><span data-i18n="news-1">Our paper on compositional image synthesis is accepted to ICASSP 2026 🎉</span></li>
+        <li><span class="date">Feb 2025</span><span data-i18n="news-2">I started my M.S. in Artificial Intelligence at Inha University, joining the Generative Computing Lab.</span></li>
       </ul>
     </section>
 
     <!-- ===================== Publications ===================== -->
     <section id="publications">
-      <h2>Publications</h2>
+      <h2 data-i18n="h-pubs">Publications</h2>
       <div class="pub">
         <div class="pub-thumb">
           <a href="https://Minsuk-ji.github.io/ReFocus/" target="_blank">
@@ -84,12 +88,12 @@
         <div class="pub-text">
           <span class="venue-badge">ICASSP 2026</span>
           <h3><a href="https://Minsuk-ji.github.io/ReFocus/" target="_blank">Compositional Image Synthesis with Inference-Time Scaling</a></h3>
-          <p class="authors"><strong>Minsuk Ji*</strong>, Sanghyeok Lee*, Namhyuk Ahn <span class="note">(* equal contribution)</span></p>
-          <p class="tldr"><strong>TL;DR:</strong> A training-free framework that improves compositional text-to-image generation by grounding LLM-synthesized layouts and reranking candidates with an object-centric VLM judge at inference time.</p>
+          <p class="authors"><strong>Minsuk Ji*</strong>, Sanghyeok Lee*, Namhyuk Ahn <span class="note" data-i18n="pub1-note">(* equal contribution)</span></p>
+          <p class="tldr" data-i18n="pub1-tldr"><strong>TL;DR:</strong> A training-free framework that improves compositional text-to-image generation by grounding LLM-synthesized layouts and reranking candidates with an object-centric VLM judge at inference time.</p>
           <p class="pub-links">
-            <a href="https://Minsuk-ji.github.io/ReFocus/" target="_blank">Project Page</a>
+            <a href="https://Minsuk-ji.github.io/ReFocus/" target="_blank" data-i18n="pub1-link-project">Project Page</a>
             <a href="https://arxiv.org/abs/2510.24133" target="_blank">arXiv</a>
-            <a href="https://github.com/gcl-inha/ReFocus" target="_blank">Code</a>
+            <a href="https://github.com/gcl-inha/ReFocus" target="_blank" data-i18n="pub1-link-code">Code</a>
           </p>
         </div>
       </div>
@@ -100,12 +104,12 @@
           </a>
         </div>
         <div class="pub-text">
-          <span class="venue-badge">Journal of KIISE (to appear)</span>
+          <span class="venue-badge" data-i18n="pub2-venue">Journal of KIISE (to appear)</span>
           <h3><a href="https://github.com/Minsuk-ji/Agentic_Amodal-Completion" target="_blank">A Reasoning-Based Amodal Completion Method for Occluded Objects Using Vision-Language Models</a></h3>
-          <p class="authors"><strong>Minsuk Ji</strong>, Namhyuk Ahn<sup>&dagger;</sup> <span class="note">(&dagger; corresponding author)</span></p>
-          <p class="tldr"><strong>TL;DR:</strong> A vision-language model drives every stage of occluded-object completion — dynamically discovering scene entities, judging and adaptively expanding boundary-truncated regions, and writing appearance-aware inpainting prompts — reducing detection failures and improving reconstruction quality over fixed-pipeline baselines.</p>
+          <p class="authors"><strong>Minsuk Ji</strong>, Namhyuk Ahn<sup>&dagger;</sup> <span class="note" data-i18n="pub2-note">(&dagger; corresponding author)</span></p>
+          <p class="tldr" data-i18n="pub2-tldr"><strong>TL;DR:</strong> A vision-language model drives every stage of occluded-object completion — dynamically discovering scene entities, judging and adaptively expanding boundary-truncated regions, and writing appearance-aware inpainting prompts — reducing detection failures and improving reconstruction quality over fixed-pipeline baselines.</p>
           <p class="pub-links">
-            <a href="https://github.com/Minsuk-ji/Agentic_Amodal-Completion" target="_blank">Code</a>
+            <a href="https://github.com/Minsuk-ji/Agentic_Amodal-Completion" target="_blank" data-i18n="pub2-link-code">Code</a>
           </p>
         </div>
       </div>
@@ -114,17 +118,17 @@
 
     <!-- ===================== Education ===================== -->
     <section id="education">
-      <h2>Education</h2>
+      <h2 data-i18n="h-edu">Education</h2>
       <ul class="entries">
         <li>
           <img class="entry-logo" src="images/logo-inha.png" alt="Inha University">
           <div class="entry-content">
             <div class="entry-head">
-              <span class="entry-title">Inha University</span>
-              <span class="date">Feb 2025 – Feb 2027 (Expected)</span>
+              <span class="entry-title" data-i18n="edu1-title">Inha University</span>
+              <span class="date" data-i18n="edu1-date">Feb 2025 – Feb 2027 (Expected)</span>
             </div>
             <div class="entry-head">
-              <span class="entry-sub">M.S. in Artificial Intelligence</span>
+              <span class="entry-sub" data-i18n="edu1-sub">M.S. in Artificial Intelligence</span>
             </div>
           </div>
         </li>
@@ -132,11 +136,11 @@
           <img class="entry-logo" src="images/logo-inha.png" alt="Inha University">
           <div class="entry-content">
             <div class="entry-head">
-              <span class="entry-title">Inha University</span>
-              <span class="date">– Feb 2025</span>
+              <span class="entry-title" data-i18n="edu2-title">Inha University</span>
+              <span class="date" data-i18n="edu2-date">– Feb 2025</span>
             </div>
             <div class="entry-head">
-              <span class="entry-sub">B.S. in Electronic Engineering</span>
+              <span class="entry-sub" data-i18n="edu2-sub">B.S. in Electronic Engineering</span>
             </div>
           </div>
         </li>
@@ -145,27 +149,27 @@
 
     <!-- ===================== Experience ===================== -->
     <section id="experience">
-      <h2>Experience</h2>
+      <h2 data-i18n="h-exp">Experience</h2>
       <ul class="entries">
         <li>
           <div class="entry-content">
             <div class="entry-head">
-              <span class="entry-title">DAPIER <span class="entry-org">· Dongguk University</span></span>
+              <span class="entry-title">DAPIER <span class="entry-org" data-i18n="exp1-org">· Dongguk University</span></span>
               <span class="date">Jul 2026 – Nov 2026</span>
             </div>
-            <div class="entry-sub">Physical AI Bootcamp Trainee</div>
-            <p>Participating in a physical AI bootcamp focused on robotic manipulation, reinforcement learning and vision-language-action-models.</p>
+            <div class="entry-sub" data-i18n="exp1-sub">Physical AI Bootcamp Trainee</div>
+            <p data-i18n="exp1-desc">Participating in a physical AI bootcamp focused on robotic manipulation, reinforcement learning and vision-language-action-models.</p>
           </div>
         </li>
         <li>
           <img class="entry-logo" src="images/logo-inha.png" alt="Inha University">
           <div class="entry-content">
             <div class="entry-head">
-              <span class="entry-title"><a href="https://gcl-inha.github.io/" target="_blank">Generative Computing Lab</a> <span class="entry-org">· Inha University</span></span>
+              <span class="entry-title"><a href="https://gcl-inha.github.io/" target="_blank">Generative Computing Lab</a> <span class="entry-org" data-i18n="exp2-org">· Inha University</span></span>
               <span class="date">Feb 2025 – Present</span>
             </div>
-            <div class="entry-sub">Graduate Researcher <span class="entry-advisor">(Advisor: <a href="https://nmhkahn.github.io/" target="_blank">Prof. Namhyuk Ahn</a>)</span></div>
-            <p>Research on diffusion models and generative AI, focused on text-to-image generation.</p>
+            <div class="entry-sub"><span data-i18n="exp2-sub">Graduate Researcher</span> <span class="entry-advisor" data-i18n="exp2-advisor">(Advisor: <a href="https://nmhkahn.github.io/" target="_blank">Prof. Namhyuk Ahn</a>)</span></div>
+            <p data-i18n="exp2-desc">Research on diffusion models and generative AI, focused on text-to-image generation.</p>
           </div>
         </li>
         <li>
@@ -174,8 +178,8 @@
               <span class="entry-title">Light Vision</span>
               <span class="date">Jun 2024 – Dec 2024</span>
             </div>
-            <div class="entry-sub">Computer Vision Developer Intern</div>
-            <p>Developed computer vision models for an unmanned parking control system, including crowd counting, weather classification, and water segmentation.</p>
+            <div class="entry-sub" data-i18n="exp3-sub">Computer Vision Developer Intern</div>
+            <p data-i18n="exp3-desc">Developed computer vision models for an unmanned parking control system, including crowd counting, weather classification, and water segmentation.</p>
           </div>
         </li>
       </ul>
@@ -183,7 +187,7 @@
 
     <!-- ===================== Projects ===================== -->
     <section id="projects">
-      <h2>Projects</h2>
+      <h2 data-i18n="h-proj">Projects</h2>
       <div class="proj-grid">
         <div class="proj-card">
           <div class="proj-video-wrap">
@@ -199,9 +203,9 @@
             <img class="proj-cover" src="images/proj-so101-isaaclab.png" alt="Parallel SO-101 manipulation environments running in NVIDIA Isaac Lab">
           </a>
           <div class="proj-body">
-            <div class="proj-title">SO-101 Manipulation Learning in Isaac Lab <span class="badge plain">Ongoing</span></div>
-            <p>A simulation-only manipulation pipeline that combines privileged-state PPO teachers, multi-view demonstration collection, ACT vision-policy training, and closed-loop evaluation for cube lifting and pick-and-place.</p>
-            <a class="proj-link" href="https://github.com/Minsuk-ji/SO-101-Manipulation-Learning-From-PPO-to-Vision-Policies" target="_blank"><i class="fab fa-github"></i> code</a>
+            <div class="proj-title">SO-101 Manipulation Learning in Isaac Lab <span class="badge plain" data-i18n="proj1-badge">Ongoing</span></div>
+            <p data-i18n="proj1-desc">A simulation-only manipulation pipeline that combines privileged-state PPO teachers, multi-view demonstration collection, ACT vision-policy training, and closed-loop evaluation for cube lifting and pick-and-place.</p>
+            <a class="proj-link" href="https://github.com/Minsuk-ji/SO-101-Manipulation-Learning-From-PPO-to-Vision-Policies" target="_blank"><i class="fab fa-github"></i> <span data-i18n="proj1-link">code</span></a>
           </div>
         </div>
         <div class="proj-card">
@@ -210,8 +214,8 @@
           </a>
           <div class="proj-body">
             <div class="proj-title">Agentic Parallel RL for SO-101 in Genesis</div>
-            <p>GPU-parallel PPO training for the SO-101 robot arm (up to thousands of environments at once) on the Genesis simulator, plus an LLM-driven RoboGen-style pipeline where Claude autonomously proposes tasks, generates scenes and reward functions, and runs the training loop end to end.</p>
-            <a class="proj-link" href="https://github.com/Minsuk-ji/agentic_RL_SO101" target="_blank"><i class="fab fa-github"></i> code</a>
+            <p data-i18n="proj2-desc">GPU-parallel PPO training for the SO-101 robot arm (up to thousands of environments at once) on the Genesis simulator, plus an LLM-driven RoboGen-style pipeline where Claude autonomously proposes tasks, generates scenes and reward functions, and runs the training loop end to end.</p>
+            <a class="proj-link" href="https://github.com/Minsuk-ji/agentic_RL_SO101" target="_blank"><i class="fab fa-github"></i> <span data-i18n="proj2-link">code</span></a>
           </div>
         </div>
         <div class="proj-card">
@@ -220,9 +224,9 @@
           </a>
           <div class="proj-body">
             <div class="proj-title">ReFocus: Compositional Image Synthesis</div>
-            <p>A training-free framework that improves compositional text-to-image generation by grounding LLM-synthesized layouts and reranking candidates with an object-centric VLM judge at inference time.</p>
-            <a class="proj-link" href="https://Minsuk-ji.github.io/ReFocus/" target="_blank"><i class="fas fa-link"></i> project page</a>
-            <a class="proj-link" href="https://github.com/gcl-inha/ReFocus" target="_blank"><i class="fab fa-github"></i> code</a>
+            <p data-i18n="proj3-desc">A training-free framework that improves compositional text-to-image generation by grounding LLM-synthesized layouts and reranking candidates with an object-centric VLM judge at inference time.</p>
+            <a class="proj-link" href="https://Minsuk-ji.github.io/ReFocus/" target="_blank"><i class="fas fa-link"></i> <span data-i18n="proj3-link-project">project page</span></a>
+            <a class="proj-link" href="https://github.com/gcl-inha/ReFocus" target="_blank"><i class="fab fa-github"></i> <span data-i18n="proj3-link-code">code</span></a>
           </div>
         </div>
         <div class="proj-card">
@@ -231,8 +235,8 @@
           </a>
           <div class="proj-body">
             <div class="proj-title">Agentic Amodal Completion</div>
-            <p>A VLM-driven pipeline that reasons through entity discovery, occlusion-order filtering, adaptive boundary expansion, and appearance-aware prompting to reconstruct occluded objects. To appear in the Journal of KIISE.</p>
-            <a class="proj-link" href="https://github.com/Minsuk-ji/Agentic_Amodal-Completion" target="_blank"><i class="fab fa-github"></i> code</a>
+            <p data-i18n="proj4-desc">A VLM-driven pipeline that reasons through entity discovery, occlusion-order filtering, adaptive boundary expansion, and appearance-aware prompting to reconstruct occluded objects. To appear in the Journal of KIISE.</p>
+            <a class="proj-link" href="https://github.com/Minsuk-ji/Agentic_Amodal-Completion" target="_blank"><i class="fab fa-github"></i> <span data-i18n="proj4-link">code</span></a>
           </div>
         </div>
         <div class="proj-card">
@@ -241,7 +245,7 @@
           </div>
           <div class="proj-body">
             <div class="proj-title">CCTV-based Crowd Counting for Emergency Situations</div>
-            <p>A real-time model that analyzes CCTV footage from an unmanned parking control system to detect crowd density and count people during accidents or emergencies. <span class="note">(Light Vision)</span></p>
+            <p data-i18n="proj5-desc">A real-time model that analyzes CCTV footage from an unmanned parking control system to detect crowd density and count people during accidents or emergencies. <span class="note">(Light Vision)</span></p>
           </div>
         </div>
         <div class="proj-card">
@@ -250,7 +254,7 @@
           </div>
           <div class="proj-body">
             <div class="proj-title">Weather Classification for Parking Lot Monitoring</div>
-            <p>A deep learning model that quickly recognizes and automatically classifies adverse weather conditions, such as heavy rain and heavy snow, from parking lot CCTV footage. <span class="note">(Light Vision)</span></p>
+            <p data-i18n="proj6-desc">A deep learning model that quickly recognizes and automatically classifies adverse weather conditions, such as heavy rain and heavy snow, from parking lot CCTV footage. <span class="note">(Light Vision)</span></p>
           </div>
         </div>
         <div class="proj-card">
@@ -259,7 +263,7 @@
           </div>
           <div class="proj-body">
             <div class="proj-title">Water Segmentation for Flood Damage Prevention</div>
-            <p>A segmentation system that precisely detects water regions in CCTV footage to distinguish normal conditions from flooding, for disaster preparedness. <span class="note">(Light Vision)</span></p>
+            <p data-i18n="proj7-desc">A segmentation system that precisely detects water regions in CCTV footage to distinguish normal conditions from flooding, for disaster preparedness. <span class="note">(Light Vision)</span></p>
           </div>
         </div>
         <!-- TODO: replace placeholder images above with real screenshots -->
@@ -267,10 +271,111 @@
     </section>
 
     <footer>
-      <span class="footer-updated">Last updated: Aug 2026</span>
+      <span class="footer-updated" data-i18n="footer-updated">Last updated: Aug 2026</span>
       <span class="footer-name">&copy; 2026 Minsuk Ji</span>
     </footer>
 
   </main>
+
+  <script>
+    (function () {
+      var KO = {
+        'nav-news': '뉴스',
+        'nav-pubs': '논문',
+        'nav-edu': '학력',
+        'nav-exp': '경력',
+        'nav-proj': '프로젝트',
+
+        'intro-p1': '저는 <a href="https://www.inha.ac.kr/" target="_blank">인하대학교</a> 인공지능학과 석사 과정에 재학 중이며, <a href="https://gcl-inha.github.io/" target="_blank">Generative Computing Lab</a> 소속으로 <a href="https://nmhkahn.github.io/" target="_blank">Namhyuk Ahn 교수님</a>의 지도를 받고 있습니다. 2025년 2월 인하대학교 전자공학과에서 학사 학위를 취득했습니다.',
+        'intro-p2': '이전에는 <strong>Light Vision</strong>에서 컴퓨터 비전 개발자 인턴으로 근무했습니다 (2024년 6월 – 2024년 12월).',
+        'intro-p3': '제 연구 관심 분야는 <strong>디퓨전 모델</strong>, <strong>월드 모델</strong>, <strong>비전-언어-행동(VLA)</strong>, <strong>피지컬 AI</strong>입니다.',
+        'link-email': '이메일',
+        'link-email-inha': '이메일 (인하)',
+
+        'h-news': '뉴스',
+        'news-1': '구성적 이미지 합성에 관한 논문이 ICASSP 2026에 채택되었습니다 🎉',
+        'news-2': '인하대학교 인공지능학과 석사 과정을 시작하며 Generative Computing Lab에 합류했습니다.',
+
+        'h-pubs': '논문',
+        'pub1-note': '(* 공동 제1저자)',
+        'pub1-tldr': '<strong>요약:</strong> 별도의 학습 없이, LLM이 생성한 레이아웃으로 이미지 생성을 그라운딩하고 추론 시점에 객체 중심 VLM 판별기로 후보를 재순위화하여 구성적 텍스트-이미지 생성을 개선하는 프레임워크입니다.',
+        'pub1-link-project': '프로젝트 페이지',
+        'pub1-link-code': '코드',
+        'pub2-venue': '정보과학회논문지 (게재 예정)',
+        'pub2-note': '(&dagger; 교신저자)',
+        'pub2-tldr': '<strong>요약:</strong> 비전-언어 모델이 가려진 객체 복원의 전 과정을 주도합니다 — 장면 내 개체를 동적으로 탐색하고, 경계가 잘린 영역을 판단하여 적응적으로 확장하며, 외형을 반영한 인페인팅 프롬프트를 작성함으로써 고정된 파이프라인 기반 방법보다 탐지 실패를 줄이고 복원 품질을 향상시킵니다.',
+        'pub2-link-code': '코드',
+
+        'h-edu': '학력',
+        'edu1-title': '인하대학교',
+        'edu1-date': '2025년 2월 – 2027년 2월 (예정)',
+        'edu1-sub': '인공지능학과 석사',
+        'edu2-title': '인하대학교',
+        'edu2-date': '– 2025년 2월',
+        'edu2-sub': '전자공학과 학사',
+
+        'h-exp': '경력',
+        'exp1-org': '· 동국대학교',
+        'exp1-sub': '피지컬 AI 부트캠프 연수생',
+        'exp1-desc': '로봇 조작, 강화학습, 비전-언어-행동 모델을 중심으로 한 피지컬 AI 부트캠프에 참여하고 있습니다.',
+        'exp2-org': '· 인하대학교',
+        'exp2-sub': '대학원 연구원',
+        'exp2-advisor': '(지도교수: <a href="https://nmhkahn.github.io/" target="_blank">Namhyuk Ahn 교수님</a>)',
+        'exp2-desc': '텍스트-투-이미지 생성을 중심으로 디퓨전 모델과 생성형 AI를 연구하고 있습니다.',
+        'exp3-sub': '컴퓨터 비전 개발자 인턴',
+        'exp3-desc': '무인 주차 관제 시스템을 위한 컴퓨터 비전 모델을 개발했습니다 (인원 계수, 날씨 분류, 침수 영역 분할 포함).',
+
+        'h-proj': '프로젝트',
+        'proj1-badge': '진행 중',
+        'proj1-desc': '특권 상태 PPO 교사 정책, 다중 시점 시연 수집, ACT 비전 정책 학습, 큐브 들어올리기 및 픽앤플레이스에 대한 폐루프 평가를 결합한 시뮬레이션 전용 조작 파이프라인입니다.',
+        'proj1-link': '코드',
+        'proj2-desc': 'Genesis 시뮬레이터에서 SO-101 로봇 팔에 대해 GPU 병렬 PPO 학습(최대 수천 개 환경 동시 실행)을 수행하고, Claude가 과제를 자율적으로 제안하고 장면과 보상 함수를 생성하며 학습 루프를 처음부터 끝까지 실행하는 LLM 기반 RoboGen 스타일 파이프라인을 결합했습니다.',
+        'proj2-link': '코드',
+        'proj3-desc': '별도의 학습 없이, LLM이 생성한 레이아웃으로 이미지 생성을 그라운딩하고 추론 시점에 객체 중심 VLM 판별기로 후보를 재순위화하여 구성적 텍스트-이미지 생성을 개선하는 프레임워크입니다.',
+        'proj3-link-project': '프로젝트 페이지',
+        'proj3-link-code': '코드',
+        'proj4-desc': '개체 탐색, 가림 순서 필터링, 적응적 경계 확장, 외형 인식 프롬프팅을 통해 가려진 객체를 복원하는 VLM 기반 파이프라인입니다. 정보과학회논문지에 게재 예정입니다.',
+        'proj4-link': '코드',
+        'proj5-desc': '무인 주차 관제 시스템의 CCTV 영상을 분석하여 사고 및 비상 상황에서 인구 밀도를 감지하고 인원을 계수하는 실시간 모델입니다. <span class="note">(Light Vision)</span>',
+        'proj6-desc': '주차장 CCTV 영상에서 폭우, 폭설과 같은 악천후를 신속하게 인식하고 자동으로 분류하는 딥러닝 모델입니다. <span class="note">(Light Vision)</span>',
+        'proj7-desc': '재해 대비를 위해 CCTV 영상에서 침수 영역을 정밀하게 감지하여 평상시와 침수 상황을 구분하는 분할(세그멘테이션) 시스템입니다. <span class="note">(Light Vision)</span>',
+
+        'footer-updated': '최종 업데이트: 2026년 8월'
+      };
+
+      var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-i18n]'));
+      var EN = {};
+      nodes.forEach(function (el) {
+        EN[el.getAttribute('data-i18n')] = el.innerHTML;
+      });
+
+      var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-lang-btn]'));
+      var STORAGE_KEY = 'site-lang';
+
+      function setLang(lang) {
+        var dict = lang === 'ko' ? KO : EN;
+        nodes.forEach(function (el) {
+          var key = el.getAttribute('data-i18n');
+          if (dict[key] !== undefined) el.innerHTML = dict[key];
+        });
+        document.documentElement.setAttribute('lang', lang);
+        buttons.forEach(function (btn) {
+          btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang-btn') === lang));
+        });
+        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setLang(btn.getAttribute('data-lang-btn'));
+        });
+      });
+
+      var saved = null;
+      try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+      var initial = saved || (navigator.language && navigator.language.indexOf('ko') === 0 ? 'ko' : 'en');
+      if (initial === 'ko') setLang('ko');
+    })();
+  </script>
 </body>
 </html>
