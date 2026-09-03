@@ -54,6 +54,9 @@
         <p data-i18n="intro-p3">
           My research interests include <strong>diffusion models</strong>, <strong>world models</strong>, <strong>vision-language-action (VLA)</strong>, and <strong>physical AI</strong>.
         </p>
+        <p data-i18n="intro-p4">
+          I also keep a <a href="https://minsuk-ji.github.io/minsuk-notes/" target="_blank">notes site</a> where I write about what I'm studying and the projects I'm working on.
+        </p>
         <p class="links">
           <a href="mailto:wlalstjr471@gmail.com"><i class="fas fa-envelope"></i> <span data-i18n="link-email">Email</span></a>
           <a href="mailto:wlalstjr471@inha.edu"><i class="fas fa-envelope"></i> <span data-i18n="link-email-inha">Email (Inha)</span></a>
@@ -195,7 +198,7 @@
           </div>
           <div class="proj-body">
             <div class="proj-title">SO-101 Pick-and-Place with SmolVLA</div>
-            <p>A real SO-101 arm running a SmolVLA policy to pick up a black circular tape and place it into a black box. The first policy, trained on 30 demonstrations, was deployed but moved jerkily and often failed. Reviewing the collected episodes showed several with the hand blocking the camera view or ending in failed grasps; after filtering these out and retraining on the remaining 25 clean demonstrations, the policy performed the task reliably (video above). Compared with an ACT policy trained on the same data, SmolVLA produced noticeably finer, more precise motion, and — thanks to its larger VLM backbone — followed complex instructions more accurately.</p>
+            <p data-i18n="proj0-desc">A real SO-101 arm running a SmolVLA policy to pick up a black circular tape and place it into a black box. The first policy, trained on 30 demonstrations, was deployed but moved jerkily and often failed. Reviewing the collected episodes showed several with the hand blocking the camera view or ending in failed grasps; after filtering these out and retraining on the remaining 25 clean demonstrations, the policy performed the task reliably (video above). Compared with an ACT policy trained on the same data, SmolVLA produced noticeably finer, more precise motion, and — thanks to its larger VLM backbone — followed complex instructions more accurately.</p>
           </div>
         </div>
         <div class="proj-card">
@@ -289,6 +292,7 @@
         'intro-p1': '저는 <a href="https://www.inha.ac.kr/" target="_blank">인하대학교</a> 인공지능학과 석사 과정에 재학 중이며, <a href="https://gcl-inha.github.io/" target="_blank">Generative Computing Lab</a> 소속으로 <a href="https://nmhkahn.github.io/" target="_blank">Namhyuk Ahn 교수님</a>의 지도를 받고 있습니다. 2025년 2월 인하대학교 전자공학과에서 학사 학위를 취득했습니다.',
         'intro-p2': '이전에는 <strong>Light Vision</strong>에서 컴퓨터 비전 개발자 인턴으로 근무했습니다 (2024년 6월 – 2024년 12월).',
         'intro-p3': '제 연구 관심 분야는 <strong>디퓨전 모델</strong>, <strong>월드 모델</strong>, <strong>비전-언어-행동(VLA)</strong>, <strong>피지컬 AI</strong>입니다.',
+        'intro-p4': '공부한 내용과 진행 중인 프로젝트를 정리하는 <a href="https://minsuk-ji.github.io/minsuk-notes/" target="_blank">노트 사이트</a>도 운영하고 있습니다.',
         'link-email': '이메일',
         'link-email-inha': '이메일 (인하)',
 
@@ -326,6 +330,7 @@
         'exp3-desc': '무인 주차 관제 시스템을 위한 컴퓨터 비전 모델을 개발했습니다 (인원 계수, 날씨 분류, 침수 영역 분할 포함).',
 
         'h-proj': '프로젝트',
+        'proj0-desc': '실제 SO-101 로봇 팔이 SmolVLA 정책으로 검은 원형 테이프를 집어 검은 상자에 넣는 프로젝트입니다. 시연 30개로 학습한 첫 정책은 배포했을 때 움직임이 부자연스럽고 자주 실패했습니다. 수집한 에피소드를 검토해보니 손이 카메라 시야를 가리거나 파지에 실패한 경우가 여럿 있었고, 이를 걸러낸 뒤 남은 25개의 깨끗한 시연으로 재학습하자 정책이 과제를 안정적으로 수행했습니다(위 영상). 같은 데이터로 학습한 ACT 정책과 비교했을 때 SmolVLA는 눈에 띄게 더 정교하고 정밀한 동작을 보였고, 더 큰 VLM 백본 덕분에 복잡한 지시도 더 정확하게 따랐습니다.',
         'proj1-badge': '진행 중',
         'proj1-desc': '특권 상태 PPO 교사 정책, 다중 시점 시연 수집, ACT 비전 정책 학습, 큐브 들어올리기 및 픽앤플레이스에 대한 폐루프 평가를 결합한 시뮬레이션 전용 조작 파이프라인입니다.',
         'proj1-link': '코드',
