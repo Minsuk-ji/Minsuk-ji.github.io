@@ -328,6 +328,10 @@ h2 {
   margin-top: 2px;
 }
 
+.entry-logo-wide {
+  padding: 2px;
+}
+
 .entry-content {
   flex: 1;
   min-width: 0;
