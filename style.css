@@ -415,7 +415,8 @@ h2 {
   box-sizing: border-box;
 }
 
-.proj-card > a img.proj-cover {
+.proj-card > a img.proj-cover,
+.proj-card > .proj-img-wrap img.proj-cover {
   object-fit: cover;
   padding: 0;
 }
